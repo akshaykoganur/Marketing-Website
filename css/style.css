@@ -1,0 +1,104 @@
+*{margin : 0; padding : 0; font-family: 'Oswald', sans-serif;}
+header{                                                           /*For components in header*/
+  width : 100%;
+  height : 100vh;
+}
+
+.navbar{                                                          /*For components in Navbar*/
+  width : 100%; height: 13%; background-color: skyblue;
+  display : flex; justify-content: space-around;
+  align-items: center;
+}
+
+.logo{                           /*For components in Logo "Marketing Website"*/
+  width: 40%;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding-right: 300px;
+  box-sizing: border-box;
+}
+
+nav{                            /*For components in Nav like Home,About,Plans,etc.*/
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+/*Exists only on home page*/
+main1{
+  height : 80%;
+  font-size: 2rem;
+  color: white;
+  background: linear-gradient(to right,purple,pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Address and landline*/
+main2{
+  height: 50%;
+  font-size: 1.3rem;
+  color: black;
+  background: linear-gradient(to right,#add8e6 50%,#00bfff );
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*Made by Akshay Kognaur*/
+main3{
+  font-size: 1.2rem;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Exists only on About page*/
+main12{
+  height : 80%;
+  font-size: 2rem;
+  color: white;
+  background: linear-gradient(to right,purple,pink);
+  display: flex;              /*flex means it arranges lines of different div are arranged horizontally*/
+  justify-content: center;
+  align-items: center;
+}
+
+main21{
+  width: 100%;
+}
+
+div.pro{
+  width: 100%;
+  display: grid;               /*grid means it arranges lines of different div are arranged vertically*/
+  justify-content: space-around;
+}
+
+div.prolist{
+    padding-top: 5%;     /*Height of image and content fom top or Navbar*/
+    padding-bottom: 5%;
+    width: 100%;
+    display: grid;
+    background: linear-gradient(to right,#FFFF00 ,#fafad2 50%);
+    padding-bottom:
+}
+
+.product-container{
+  padding-top: 5%;
+
+  display: flex;        /*Objects in different div will be placed horizantly*/
+  align-items: center;
+  justify-content: center;
+}
+
+.map{
+  padding-left: 35%;
+  padding-top: 10%;
+  height: 30%;
+  font-size: 2rem;
+  background: linear-gradient(to right,#FFFF00 ,#fafad2 50%);
+  align-items: center;
+  justify-content: center;
+}
