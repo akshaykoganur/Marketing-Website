@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="plans.js" async></script>
+    <script type="module" src="login.js" async></script>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -18,35 +20,40 @@
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="plans.html">Plans</a>
-          <a href="#">Reviews</a>
-          <a href="contact.html">Contact us</a>
-          <a href="https://www.linkedin.com/in/akshay-koganur-255ba7208/" target="_blank">Linkedin</a>
+          
+          <a href="login.html">Login</a>
+          <a href="signup.html">Signup</a>
+          
         </nav>
       </section>
       <div class="prolist">
-
+        <h1 class="authuname">Welcome User</h1>
       <div class="product-container">
-
+        
         <div class="pro">
           <div class="img">
-            <img src="images/advice.jpg" style="width:130px;height:130px;">
+            <img class="img1" src="images/advice.jpg" style="width:130px;height:130px;">
           </div>
-          <div class="title">
-            <h1>Advice</h1>
+          <div class="title" id='advice'>
+            <h1 class="h1">Advice</h1>
+          </div>
+          <div class="title1">
             <h3>Advice will be given from Experts</h3>
-            <p>Rs.1000000</p>
-            <button type="button" name="button">Book</button>
+            <p class="pr">Rs.1000000</p>
+            <button type="button" class="but">Book</button>
           </div>
         </div>
         <div class="pro">
           <div class="img">
-            <img src="images/hoarding.jpg" style="width:130px;height:130px;">
+            <img class="img1" src="images/hoarding.jpg" style="width:130px;height:130px;">
           </div>
           <div class="title">
-            <h1>Hoarding</h1>
+            <h1 class="h1">Hoarding</h1>
+          </div>
+          <div class="title1">
             <h3>Hoarding will be posted</h3>
-            <p>Rs.2000000</p>
-            <button type="button" name="button">Book</button>
+            <p class="pr">Rs.2000000</p>
+            <button type="button" class="but">Book</button>
           </div>
         </div>
       </div>
@@ -54,24 +61,28 @@
 
         <div class="pro">
           <div class="img">
-            <img src="images/pr_team.jpg" style="width:130px;height:130px;">
+            <img class="img1" src="images/pr_team.jpg" style="width:130px;height:130px;">
           </div>
           <div class="title">
-            <h1>PR Team</h1>
+            <span class="h1">PR Team</span>
+          </div>
+          <div class="title1">
             <h3>Marketing will be done by PR Team</h3>
-            <p>Rs.3000000</p>
-            <button type="button" name="button">Book</button>
+            <span class="pr">Rs.3000000</span>
+            <button type="button" class="but">Book</button>
           </div>
         </div>
         <div class="pro">
           <div class="img">
-            <img src="images/social_media.jpg" style="width:130px;height:130px;">
+            <img class="img1" src="images/social_media.jpg" style="width:130px;height:130px;">
           </div>
           <div class="title">
-            <h1>Social Media</h1>
+            <h1 class="h1">Social Media</h1>
+          </div>
+          <div class="title1">
             <h3>Marketing through social media</h3>
-            <p>Rs.4000000</p>
-            <button type="button" name="button">Book</button>
+            <p class="pr">Rs.4000000</p>
+            <button type="button" class="but">Book</button>
           </div>
         </div>
       </div>
@@ -79,29 +90,60 @@
 
         <div class="pro">
           <div class="img">
-            <img src="images/monthly.jpg" style="width:130px;height:130px;">
+            <img class="img1" src="images/monthly.jpg" style="width:130px;height:130px;">
           </div>
           <div class="title">
-            <h1>Monthly Package</h1>
+            <h1 class="h1">Monthly Package</h1>
+          </div>
+          <div class="title1">
             <h3>All packages per month</h3>
-            <p>Rs.7000000</p>
-            <button type="button" name="button">Book</button>
+            <p class="pr">Rs.7000000</p>
+            <button type="button" class="but">Book</button>
           </div>
         </div>
         <div class="pro">
           <div class="img">
-            <img src="images/yearly.jpg" style="width:130px;height:130px;">
+            <img class="img1" src="images/yearly.jpg" style="width:130px;height:130px;">
           </div>
           <div class="title">
-            <h1>Yearly Package</h1>
-            <h3>All packages per month</h3>
-            <p>Rs.70000000</p>
-            <button type="button" name="button">Book</button>
+            <h1 class="h1">Yearly Package</h1>
+          </div>
+          <div class="title1">
+            <h3>All packages per year</h3>
+            <p class="pr">Rs.70000000</p>
+            <button type="button" class="but">Book</button>
           </div>
         </div>
       </div>
 
     </div>
+    <section class="container content-section">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items">
+          <div class="cart-row">
+              <div class="cart-item cart-column">
+                  <img class="cart-item-image" src="images/surprise.jpg" width="100" height="100">
+                  <span class="cart-item-title">Surprise Gift</span>
+              </div>
+              <span class="cart-price cart-column">Rs.0</span>
+              <div class="cart-quantity cart-column">
+                  <input class="cart-quantity-input" type="number" value="1">
+                  <button class="btn btn-danger" type="button">REMOVE</button>
+              </div>
+          </div>
+          
+      </div>
+      <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">Rs.0</span>
+      </div>
+      <button id="purchase" class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+  </section>
     <main2>
       <div class="contact">
         <h1>Address :</h1>
@@ -121,9 +163,7 @@
         <a href="https://twitter.com/i/flow/login" target="_blank">twitter</a>
       </div>
     </main2>
-    <main3>
-      Made by Akshay Koganur
-    </main3>
+
     </header>
   </body>
 </html>
