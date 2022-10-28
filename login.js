@@ -40,7 +40,7 @@ btnlogIn.addEventListener('click',(e)=> {
         update(ref(database, 'users/' + user.uid),{
             last_login : dt,
         })
-        alert('login successful !!');
+        alert('login successful !! Welcome '+email);
         document.getElementsByClassName('authuname').innerText = 'Welcome Back';
     })
     .catch((error) => {

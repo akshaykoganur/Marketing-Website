@@ -89,7 +89,7 @@ function updateTotal(){
 }
 
 purchase.addEventListener('click',(e)=> {
-    if(document.getElementsByClassName('uname').innerText=='Welcome User'){
+    if(document.getElementsByClassName('authuname').innerText=='Welcome User'){
         alert('Log In first to Purchase');
     }
     else{
