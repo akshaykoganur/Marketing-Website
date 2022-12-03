@@ -5,13 +5,13 @@ for(var i=0;i<rem.length;i++){
 }
 
 var qtyUp = document.getElementsByClassName('cart-quantity-input');
-for(var i=0;i<qtyUp.length;i++) {
+for(var i=0;i<qtyUp.length;i++){
     var qty = qtyUp[i];
     qty.addEventListener('change', changeItem);
 }
 
 var add = document.getElementsByClassName('but');
-for(var i=0;i<add.length;i++) {
+for(var i=0;i<add.length;i++){
     var ad = add[i];
     ad.addEventListener('click', addItem);
 }
@@ -40,18 +40,14 @@ function addToCart(title,price,imgsrc) {
         }
     }
     var cartRowContents = 
-    `<div class="cart-items">
-    <div class="cart-row">
-        <div class="cart-item cart-column">
-            <img class="cart-item-image" src=${ imgsrc } width="100" height="100">
-            <span class="cart-item-title">${ title }</span>
-        </div>
-        <span class="cart-price cart-column">${ price }</span>
-        <div class="cart-quantity cart-column">
-            <input class="cart-quantity-input" type="number" value="1">
-            <button class="btn btn-danger" type="button">REMOVE</button>
-        </div>
+    `<div class="cart-item cart-column">
+        <img class="cart-item-image" src=${ imgsrc } width="100" height="100">
+        <span class="cart-item-title">${ title }</span>
     </div>
+    <span class="cart-price cart-column">${ price }</span>
+    <div class="cart-quantity cart-column">
+        <input class="cart-quantity-input" type="number" value="1">
+        <button class="btn btn-danger" type="button">REMOVE</button>
     </div>`
     cartRow.innerHTML = cartRowContents;
     cartItems.append(cartRow); 
