@@ -48,6 +48,6 @@ signUp.addEventListener('click',(e) => {
         const errorCode = error.code;
         const errorMessage = error.message;
         // ..
-        alert('error',errorMessage);
+        alert('error'+errorMessage);
     });
 });
