@@ -1,3 +1,4 @@
+
 // Import the functions you need from the SDKs you need
 
 import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-database.js";
@@ -21,6 +22,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebas
     messagingSenderId: "893694529509",
     appId: "1:893694529509:web:845deca21c21a0215e290c"
   };
+
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);

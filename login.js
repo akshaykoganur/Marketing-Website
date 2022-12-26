@@ -21,6 +21,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebas
     messagingSenderId: "893694529509",
     appId: "1:893694529509:web:845deca21c21a0215e290c"
   };
+
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
@@ -39,7 +40,7 @@ btnlogIn.addEventListener('click',(e)=> {
         update(ref(database, 'users/' + user.uid),{
             last_login : dt,
         })
-        alert('login successful !! Welcome '+email);
+        alert('login successful !!');
         document.getElementsByClassName('authuname').innerText = 'Welcome Back';
     })
     .catch((error) => {
