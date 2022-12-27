@@ -14,6 +14,13 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebas
   // Your web app's Firebase configuration
   const firebaseConfig = {
    //enter your credentials here
+    apiKey: "AIzaSyBo1Gd377Glpbjsi8iAXWUENl4gqA203m4",
+    authDomain: "marketing-web-c37fb.firebaseapp.com",
+    databaseURL: "https://marketing-web-c37fb-default-rtdb.firebaseio.com",
+    projectId: "marketing-web-c37fb",
+    storageBucket: "marketing-web-c37fb.appspot.com",
+    messagingSenderId: "893694529509",
+    appId: "1:893694529509:web:845deca21c21a0215e290c"
   };
 
   // Initialize Firebase
