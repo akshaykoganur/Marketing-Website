@@ -35,6 +35,9 @@
           <h1>Review Section</h1>
         </span>
       </maina>
+      
+
+      <!---
       <main1>
         <div class="reviews">
           <span class='text-light'>
@@ -69,6 +72,54 @@
           </span>
         </div>
       </main1>
+    -->
+
+
+      <div class="carousel">
+        <div class="carousel-container">
+          <div class="carousel-item">
+            <div class="reviews">
+              <span>
+                <p style="">AB Traders</p>
+              </span>
+              <span class='weight600'>
+                <p>We have recieved positive response after taking marketing plans from them.</p>
+              </span>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="reviews">
+              <span>
+                <p>MN Shoes</p>
+              </span>
+              <span class='weight600'>
+                <p>Demand of our shoes has increased in market after marketing through them. Good service</p>
+              </span>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="reviews">
+              <span>
+                <p>PR Sarees</p>
+              </span>
+              <span class='weight600'>
+                <p>Our sales increased tremendously after marketing through them.</p>
+              </span>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="reviews">
+              <span>
+                <p>KIK Books</p>
+              </span>
+              <span class='weight600'>
+                <p>Books sale have increased due to PR team's efforts. Good service at reasonable rate.</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+       
       <main2>
         <div class="contact">
           <h1>Address :</h1>
@@ -89,5 +140,34 @@
         </div>
       </main2>
     </header>
+
+    <script>
+      const carousel = document.querySelector('.carousel');
+const container = document.querySelector('.carousel-container');
+const items = document.querySelectorAll('.carousel-item');
+
+let slide = 0;
+
+function slideRight() {
+  if (slide === items.length - 1) {
+    slide = 0;
+  } else {
+    slide++;
+  }
+  container.style.transform = `translateX(-${slide * items[0].clientWidth}px)`;
+}
+
+function slideLeft() {
+  if (slide === 0) {
+    slide = items.length - 1;
+  } else {
+    slide--;
+  }
+  container.style.transform = `translateX(-${slide * items[0].clientWidth}px)`;
+}
+
+setInterval(slideRight, 5000);
+
+    </script>
   </body>
 </html>

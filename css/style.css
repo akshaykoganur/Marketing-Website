@@ -42,6 +42,7 @@ maina{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2%;
 }
 
 /*Address and landline*/
@@ -177,6 +178,7 @@ div.prolist{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding-top: 10%;
 }
 
 .login{
@@ -246,13 +248,11 @@ div.prolist{
   border: none;
   outline: none;
   background-color: skyblue;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit; 
+  margin: 0; 
 }
 
 
-
-/* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -268,8 +268,6 @@ div.prolist{
   display: block;
   text-align: left;
 }
-
-/* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
 }
@@ -280,8 +278,14 @@ div.prolist{
 }
 
 
+
+
+
+
+
+
                                     /* Cart  */
-.container.content-section{                                                          /*For components in Navbar*/
+.container.content-section{                                                          
   width : 100%; background-color: skyblue;
   display : grid; justify-content: space-around;
   align-items: center;
@@ -292,15 +296,19 @@ div.prolist{
 .cart-row{
   justify-content: space-around;
   display: flex;
+  width: 200%;
+  padding-right: 65%;
 }
 
 .section-header {
+  text-align: center;
   justify-content: center;
   align-items: center;
 }
 
 .cart-column {
   display: grid;
+  padding-right: 45%;
 }
 
 .cart-items {
@@ -343,5 +351,56 @@ div.prolist{
 }
 
 .cart-item {
-  width: 45%;
+  display: grid;
 }
+
+span{
+  text-align: center;
+  font-size: large;
+}
+
+
+
+
+
+
+
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  padding: 1%;
+  background: linear-gradient(to right,#FFFF00 ,rgb(241, 174, 50) 50%);
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 50%;
+  margin-right: 20px;
+}
+
+.carousel-item:last-of-type {
+  margin-right: 0;
+}
+
+
+.reviews {
+  width: 300px;
+  height: 200px;
+  margin: 0 10px;
+  background-color: #f1f1f1;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
